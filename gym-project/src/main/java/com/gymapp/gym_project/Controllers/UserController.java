@@ -3,7 +3,7 @@ package com.gymapp.gym_project.Controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.gymapp.gym_project.Entities.User;
+import com.gymapp.gym_project.Entity.User;
 import com.gymapp.gym_project.Repository.IUserRepository;
 
 @RequestMapping("/rest-api-user")

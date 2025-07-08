@@ -1,6 +1,5 @@
-package com.gymapp.gym_project.Entities;
+package com.gymapp.gym_project.Entity;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +11,6 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="user")
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,7 +22,6 @@ public class User {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name="name")
     private String name;
 
 
