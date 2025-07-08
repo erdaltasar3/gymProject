@@ -1,4 +1,4 @@
-package com.gymapp.Entities;
+package com.gymapp.gym_project.Entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
