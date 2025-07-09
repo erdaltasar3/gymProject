@@ -1,4 +1,4 @@
-package com.gymapp.gym_project.Entity;
+package com.gymapp.gym_project.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

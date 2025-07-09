@@ -1,5 +1,5 @@
 package com.gymapp.gym_project.mapper;
-import com.gymapp.gym_project.Entity.Role;
+import com.gymapp.gym_project.entity.Role;
 import com.gymapp.gym_project.dto.RoleDto;
 import org.springframework.stereotype.Component;
 

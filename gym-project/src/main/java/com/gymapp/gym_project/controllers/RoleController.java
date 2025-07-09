@@ -1,4 +1,4 @@
-package com.gymapp.gym_project.Controllers;
+package com.gymapp.gym_project.controllers;
 
 
 import com.gymapp.gym_project.dto.RoleDto;

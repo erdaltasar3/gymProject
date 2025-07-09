@@ -1,10 +1,10 @@
-package com.gymapp.gym_project.Controllers;
+package com.gymapp.gym_project.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.gymapp.gym_project.Entity.User;
-import com.gymapp.gym_project.Repository.IUserRepository;
+import com.gymapp.gym_project.entity.User;
+import com.gymapp.gym_project.repository.IUserRepository;
 
 @RequestMapping("/rest-api-user")
 @RestController
