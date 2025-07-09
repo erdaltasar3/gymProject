@@ -1,8 +1,8 @@
 package com.gymapp.gym_project.service.concretes;
 
 
-import com.gymapp.gym_project.Entity.Role;
-import com.gymapp.gym_project.Repository.RoleRepository;
+import com.gymapp.gym_project.entity.Role;
+import com.gymapp.gym_project.repository.RoleRepository;
 import com.gymapp.gym_project.dto.RoleDto;
 import com.gymapp.gym_project.mapper.RoleMapper;
 import com.gymapp.gym_project.service.abstracts.RoleService;
