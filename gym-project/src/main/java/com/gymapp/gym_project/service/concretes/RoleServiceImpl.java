@@ -2,7 +2,7 @@ package com.gymapp.gym_project.service.concretes;
 
 
 import com.gymapp.gym_project.entity.Role;
-import com.gymapp.gym_project.repository.RoleRepository;
+import com.gymapp.gym_project.repository.IRoleRepository;
 import com.gymapp.gym_project.dto.RoleDto;
 import com.gymapp.gym_project.mapper.RoleMapper;
 import com.gymapp.gym_project.service.abstracts.RoleService;
@@ -15,10 +15,10 @@ import java.util.stream.Collectors;
 @Service
 public class RoleServiceImpl implements RoleService {
 
-    private final RoleRepository roleRepository;
+    private final IRoleRepository roleRepository;
     private final RoleMapper roleMapper;
 
-    public RoleServiceImpl(RoleRepository roleRepository, RoleMapper roleMapper) {
+    public RoleServiceImpl(IRoleRepository roleRepository, RoleMapper roleMapper) {
         this.roleRepository = roleRepository;
         this.roleMapper = roleMapper;
     }
