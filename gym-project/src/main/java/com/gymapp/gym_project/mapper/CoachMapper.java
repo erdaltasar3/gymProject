@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Component;
 
 import com.gymapp.gym_project.dto.CoachDto;
 import com.gymapp.gym_project.entity.Coach;
 
+@Component
 public class CoachMapper {
     
 
     public CoachDto toDto(Coach coach){
-        if (coach == null || coach.getId() == null) {
+        if (coach == null) {
             return null;
         }
         CoachDto coachDto = new CoachDto();
@@ -21,7 +23,7 @@ public class CoachMapper {
     }
 
     public Coach toEntity(CoachDto coachDto) {
-        if (coachDto == null || coachDto.getId() == null) {
+        if (coachDto == null) {
             return null;
         }
         Coach coach = new Coach();
