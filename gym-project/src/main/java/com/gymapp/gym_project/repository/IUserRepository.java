@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.gymapp.gym_project.entity.User;
 
 @Repository
-public interface IUserRepository extends JpaRepository<User, Long>{
+public interface IUserRepository extends JpaRepository<User, Integer> {
 
 }

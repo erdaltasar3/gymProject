@@ -3,7 +3,6 @@ package com.gymapp.gym_project.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 
 import com.gymapp.gym_project.dto.UserDto;
@@ -18,7 +17,19 @@ public class UserMapper {
             return null;
         }
         UserDto userDto = new UserDto();
-        BeanUtils.copyProperties(user, userDto);
+        userDto.setId((long)user.getId());
+        userDto.setName(user.getName());
+        userDto.setSurName(user.getSurname());
+        userDto.setEmail(user.getEmail());
+        userDto.setNumber(user.getNumber());
+        userDto.setGender(user.getGender());
+        userDto.setAdress(user.getAdress());
+        userDto.setBirthdayDate(user.getBirthdayDate());
+        userDto.setPassword(user.getPassword());
+        userDto.setRoleId(user.getRoleId());
+        userDto.setFitnessCenterId(user.getFitnessCenterId());
+        userDto.setCreatedAt(user.getCreatedAt());
+
         return userDto;
     }
 
@@ -27,7 +38,21 @@ public class UserMapper {
             return null;
         }
         User user = new User();
-        BeanUtils.copyProperties(userDto, user);
+        if (userDto.getId() != null) {
+            user.setId(userDto.getId().intValue());
+        }
+        user.setName(userDto.getName());
+        user.setSurname(userDto.getSurName());
+        user.setEmail(userDto.getEmail());
+        user.setNumber(userDto.getNumber());
+        user.setGender(userDto.getGender());
+        user.setAdress(userDto.getAdress());
+        user.setBirthdayDate(userDto.getBirthdayDate());
+        user.setPassword(userDto.getPassword());
+        user.setRoleId(userDto.getRoleId());
+        user.setFitnessCenterId(userDto.getFitnessCenterId());
+        user.setCreatedAt(userDto.getCreatedAt());
+
         return user;
     }
 
