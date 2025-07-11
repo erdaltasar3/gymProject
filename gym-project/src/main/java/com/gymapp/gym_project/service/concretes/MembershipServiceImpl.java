@@ -39,7 +39,7 @@ public class MembershipServiceImpl implements MembershipService {
     @Override
     public MembershipDto createMembership(MembershipDto membershipDto) {
         Membership membership = membershipMapper.toEntity(membershipDto);
-        membership.setId(null); // güvenlik için
+        membership.setId(null);
         Membership saved = membershipRepository.save(membership);
         return membershipMapper.toDto(saved);
     }
