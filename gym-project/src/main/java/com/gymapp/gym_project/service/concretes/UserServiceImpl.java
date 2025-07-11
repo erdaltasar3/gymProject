@@ -69,7 +69,7 @@ public class UserServiceImpl implements IUserService {
             return null;
         }
         User userDb = optional.get();
-        BeanUtils.copyProperties(userDto, userDb, "id");
+        BeanUtils.copyProperties(userDto, userDb, "id", "createdAt");
         userDb.setSurname(userDto.getSurName());
         User updatedUser = userRepository.save(userDb);
         return userMapper.toDto(updatedUser);
