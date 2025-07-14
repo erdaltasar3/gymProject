@@ -8,3 +8,11 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+
+### VS Code ###
+.vscode/
+
+# Node.js frontend
+/gym-project-frontend/node_modules/
+/gym-project-frontend/package-lock.json
