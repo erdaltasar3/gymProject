@@ -8,3 +8,11 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Spring config
+src/main/resources/application.properties
+src/main/resources/application.yml
+# Gradle files
+.gradle/
+# Node.js dependencies
+/node_modules/
