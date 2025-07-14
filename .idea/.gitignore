@@ -15,4 +15,4 @@ src/main/resources/application.yml
 # Gradle files
 .gradle/
 # Node.js dependencies
-/node_modules/
+gym-project-frontend/node_modules/
