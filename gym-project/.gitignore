@@ -35,3 +35,6 @@ build/
 # Spring config
 src/main/resources/application.properties
 src/main/resources/application.yml
+# Node.js frontend
+/gym-project-frontend/node_modules/
+/gym-project-frontend/package-lock.json
