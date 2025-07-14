@@ -8,3 +8,31 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Gradle files
+/.gradle/
+
+# Node.js dependencies - Frontend
+gym-project-frontend/node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend build files
+gym-project-frontend/build/
+gym-project-frontend/dist/
+gym-project-frontend/.env.local
+gym-project-frontend/.env.development.local
+gym-project-frontend/.env.test.local
+gym-project-frontend/.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
