@@ -9,9 +9,8 @@
 /dataSources/
 /dataSources.local.xml
 
-# Spring config
-src/main/resources/application.properties
-src/main/resources/application.yml
+gym-project/src/main/resources/application.properties
+gym-project/src/main/resources/application.yml
 # Gradle files
 .gradle/
 # Node.js dependencies
