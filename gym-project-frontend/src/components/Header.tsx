@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               <li><Link to="/trainers" onClick={() => setIsMenuOpen(false)}>Antrenörler</Link></li>
               <li><Link to="/membership" onClick={() => setIsMenuOpen(false)}>Üyelik</Link></li>
               <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>İletişim</Link></li>
-              <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Salonlarımız</Link></li>
+              <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Salonlarımız</Link></li> // salon eklendi
             </ul>
           </nav>
 
