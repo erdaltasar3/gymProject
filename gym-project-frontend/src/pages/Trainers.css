@@ -1,0 +1,204 @@
+.trainers {
+  padding-top: 80px;
+}
+
+.trainers-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.trainers-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.trainers-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.trainers-content {
+  padding: 5rem 0;
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.trainer-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.trainer-image {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.trainer-avatar {
+  font-size: 5rem;
+  display: block;
+}
+
+.trainer-info {
+  padding: 2rem;
+}
+
+.trainer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.trainer-specialty {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.trainer-experience {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.trainer-bio {
+  margin-bottom: 1.5rem;
+}
+
+.trainer-bio p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.trainer-certifications {
+  margin-bottom: 2rem;
+}
+
+.trainer-certifications h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.trainer-certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trainer-certifications li {
+  background: #f8f9fa;
+  padding: 0.3rem 0.8rem;
+  margin: 0.3rem 0;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.trainer-booking {
+  background: #f8f9fa;
+  padding: 5rem 0;
+}
+
+.trainer-booking h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.trainer-booking > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.booking-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.booking-feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.booking-feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.booking-feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .trainers-hero h1 {
+    font-size: 2rem;
+  }
+
+  .trainers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trainer-card {
+    margin: 0 1rem;
+  }
+
+  .booking-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .trainers-hero {
+    padding: 2rem 0;
+  }
+
+  .trainers-content {
+    padding: 3rem 0;
+  }
+
+  .trainer-booking {
+    padding: 3rem 0;
+  }
+
+  .trainer-info {
+    padding: 1.5rem;
+  }
+
+  .trainer-image {
+    padding: 1.5rem;
+  }
+
+  .trainer-avatar {
+    font-size: 4rem;
+  }
+}
