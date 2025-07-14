@@ -19,6 +19,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           
+          
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             <ul className="nav-list">
               <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Ana Sayfa</Link></li>
@@ -26,6 +27,8 @@ const Header: React.FC = () => {
               <li><Link to="/trainers" onClick={() => setIsMenuOpen(false)}>Antrenörler</Link></li>
               <li><Link to="/membership" onClick={() => setIsMenuOpen(false)}>Üyelik</Link></li>
               <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>İletişim</Link></li>
+                            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>İletişimmm</Link></li>
+
             </ul>
           </nav>
 
